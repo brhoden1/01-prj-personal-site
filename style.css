@@ -1,1 +1,175 @@
-/* Add you CSS here */
+/* Simple CSS for a beginner-friendly portfolio website */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.hero-image {
+  flex: 1 1 280px;
+  min-height: 260px;
+  background-color: #dfe7f2;
+  border: 2px dashed #a1b5d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 50%;
+  height:50%;
+  object-fit: cover;
+}
+
+.hero-card {
+  flex: 1 1 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  padding: 28px;
+}
+
+.hero-intro {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.hero-card h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.hero-job {
+  margin: 0 0 18px;
+  font-size: 16px;
+  color: #1a73e8;
+}
+
+.hero-bio {
+  margin: 0;
+  color: #444;
+}
+
+.content-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+}
+
+.content-section h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list li {
+  background-color: #e8f0ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-card {
+  flex: 1 1 280px;
+  background-color: #f8fbff;
+  border: 1px solid #d7e2f0;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 24px;
+  color: #555;
+}
+
+.site-footer a {
+  color: #1a73e8;
+}
+
+@media (max-width: 768px) {
+  .site-header,
+  .hero-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .hero-card,
+  .hero-image {
+    min-width: 0;
+  }
+}
