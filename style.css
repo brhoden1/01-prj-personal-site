@@ -215,7 +215,7 @@ a {
 }
 
 .gallery-item {
-  position: relative;
+  position: fixed;
   width: calc(25% - 12px);
   min-width: 160px;
   background-color: #ffffff;
@@ -232,7 +232,8 @@ a {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
