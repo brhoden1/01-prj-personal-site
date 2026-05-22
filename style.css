@@ -131,6 +131,38 @@ a {
   color: #444;
 }
 
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.skills-list li {
+  background-color: transparent;
+  color: #b38fc0;
+  padding: 16px 18px;
+  text-align: center;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.skill-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
 /* Hero image panels (four large images with hover-to-reveal captions) */
 .hero-images {
   display: grid;
